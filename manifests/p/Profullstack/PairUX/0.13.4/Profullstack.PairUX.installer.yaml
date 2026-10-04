@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+PackageIdentifier: Profullstack.PairUX
+PackageVersion: 0.13.4
+Platform:
+  - Windows.Desktop
+MinimumOSVersion: 10.0.17763.0
+InstallerType: nullsoft
+Scope: user
+InstallModes:
+  - interactive
+  - silent
+  - silentWithProgress
+InstallerSwitches:
+  Silent: /S
+  SilentWithProgress: /S
+Installers:
+  - Architecture: x64
+    InstallerUrl: https://github.com/profullstack/pairux.com/releases/download/v0.13.4/PairUX.Setup.0.13.3.exe
+    InstallerSha256: D388958B5F88974AD863C191B203CAA3B7229D30DCDA6BD781731E4F47F8AFFD
+ManifestType: installer
+ManifestVersion: 1.10.0
